@@ -2,15 +2,12 @@
 
 # Core app dependencies
 streamlit
-matplotlib
-PyPDF2
-python-docx
 spacy
 scikit-learn
-reportlab
-
-# Runtime dependency commonly required by scikit-learn
+pandas
 numpy
-
-# After installing, download the spaCy English model:
-# python -m spacy download en_core_web_sm
+PyPDF2
+python-docx
+matplotlib
+reportlab
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz
