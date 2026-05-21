@@ -1,0 +1,50 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.env/
+env/
+ENV/
+.tf_env/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+*.whl
+
+# SQLite / database
+*.db
+*.sqlite3
+
+# Jupyter
+.ipynb_checkpoints
+
+# Logs
+*.log
+logs/
+
+# IDE / editor
+.vscode/
+.idea/
+*.iml
+
+# OS
+Thumbs.db
+desktop.ini
+
+# PyCharm
+.pytest_cache/
+.mypy_cache/
+
+# Byte-compiled / optimized
+*.pyc
+*.pyo
+*.pyd
+
+# macOS
+.DS_Store
