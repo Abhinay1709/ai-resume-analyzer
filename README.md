@@ -33,11 +33,20 @@ python -m spacy download en_core_web_sm
 
 **Run**
 
-Start the Streamlit app:
+Start the Streamlit app locally:
 
 ```powershell
 streamlit run app.py
 ```
+
+**Streamlit Cloud Deployment**
+
+To deploy on Streamlit Cloud:
+
+1. Push this repo to GitHub.
+2. Create a new app on Streamlit Cloud.
+3. Set the app file to `streamlit_app.py`.
+4. Use `requirements.txt` as the dependency file.
 
 **Notes**
 
