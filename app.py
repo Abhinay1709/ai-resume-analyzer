@@ -3,7 +3,6 @@
 # =========================
 
 import streamlit as st
-import matplotlib.pyplot as plt
 
 from utils import (
     extract_pdf_text,
@@ -542,57 +541,34 @@ if menu == "Resume Analyzer":
                         missing_skills
                     )
 
-                    fig1, ax1 = plt.subplots()
-
-                    ax1.pie(
-
-                        [
-                            matched_count,
-                            missing_count
-                        ],
-
-                        labels=[
-                            "Matched Skills",
-                            "Missing Skills"
-                        ],
-
-                        autopct="%1.1f%%"
+                    st.subheader(
+                        "Skills Summary"
                     )
 
-                    ax1.set_title(
-                        "Skills Analysis"
+                    st.write(
+                        f"Matched Skills: {matched_count}"
                     )
 
-                    st.pyplot(fig1)
+                    st.write(
+                        f"Missing Skills: {missing_count}"
+                    )
 
                     # =========================
                     # Bar Chart
                     # =========================
 
-                    fig2, ax2 = plt.subplots()
-
-                    categories = [
-                        "ATS Score",
-                        "Skill Match"
-                    ]
-
-                    values = [
-                        ats_score,
-                        skill_match
-                    ]
-
-                    ax2.bar(
-                        categories,
-                        values
-                    )
-
-                    ax2.set_ylim([0, 100])
-
-                    ax2.set_title(
+                    st.subheader(
                         "Resume Performance"
                     )
 
-                    st.pyplot(fig2)
+                    st.bar_chart(
+                        {
+                            "Score": [
+                                ats_score,
+                                skill_match
+                            ]
+                        }
+                    )
 
                     st.divider()
 
@@ -724,23 +700,15 @@ elif menu == "Analysis History":
             # ATS History Chart
             # =========================
 
-            fig, ax = plt.subplots()
-
-            ax.plot(scores)
-
-            ax.set_title(
+            st.subheader(
                 "ATS Score History"
             )
 
-            ax.set_xlabel(
-                "Analysis"
+            st.line_chart(
+                {
+                    "ATS Score": scores
+                }
             )
-
-            ax.set_ylabel(
-                "ATS Score"
-            )
-
-            st.pyplot(fig)
 
             # =========================
             # Metrics
