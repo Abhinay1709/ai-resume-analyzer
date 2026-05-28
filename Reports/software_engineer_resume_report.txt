@@ -1,0 +1,18 @@
+
+ATS Score: 15.16%
+
+ATS Category: Poor
+
+Resume Rank: D
+
+Skill Match Percentage:
+50.0%
+
+Detected Skills:
+java, sql, python, github, html, git, css, javascript
+
+Missing Skills:
+communication, aws, mysql, docker, mongodb, c++, react
+
+Suggestions:
+Resume has low ATS match., Add more keywords from job description., Add missing technical skills., Use strong action verbs., Add measurable achievements., Improve project descriptions.
