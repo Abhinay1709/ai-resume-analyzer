@@ -339,8 +339,6 @@ if menu == "Resume Analyzer":
                         "Resume Processed Successfully"
                     )
 
-                    st.balloons()
-
                     # =========================
                     # ATS Dashboard
                     # =========================
